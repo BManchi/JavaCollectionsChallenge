@@ -40,6 +40,10 @@ public class Basket {
         return 0;
     }
 
+    public void clearBasket() {
+        this.list.clear();
+    }
+
     public Map<StockItem, Integer> Items() {
         return Collections.unmodifiableMap(list);
     }
@@ -55,3 +59,4 @@ public class Basket {
         return s + "Total cost " + totalCost;
     }
 }
+
